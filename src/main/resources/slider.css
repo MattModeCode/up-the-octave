@@ -1,0 +1,39 @@
+.slider {
+    -fx-padding: 0;
+}
+
+.slider .track {
+    -fx-background-color: transparent;
+
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+.slider .thumb {
+    -fx-background-image: url("sprites/misc/knob.png");
+    -fx-background-position: center;
+    -fx-background-size: contain;
+
+    -fx-pref-width: 20;
+    -fx-pref-height: 17;
+
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.slider:focused .thumb {
+    -fx-effect: null;
+}
+
+.slider .tick-mark,
+.slider .axis {
+    -fx-opacity: 0;
+}
+
+.slider .thumb:hover,
+.slider .thumb:pressed {
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
